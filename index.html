@@ -6,48 +6,24 @@
   <title>Bridge & Bloom</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f3f0ff;
-      color: #333;
-    }
-    header {
-      background-color: #fff;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    header img {
-      max-width: 300px;
-    }
-    h1, h2 {
-      font-family: 'Playfair Display', serif;
-    }
-    .section {
-      max-width: 800px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
-    .services ul {
-      padding-left: 1.2rem;
-    }
-    .contact a {
-      color: #c42b6c;
-      text-decoration: none;
-    }
-    .footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #888;
-    }
+    :root { --brand:#c42b6c; --panel:rgba(255,255,255,.9); }
+    body{font-family:'Open Sans',sans-serif;margin:0;color:#2b2b2b;background:url('background.jpg') no-repeat center/cover fixed;}
+    header{background:rgba(255,255,255,.9);text-align:center;padding:2rem 1rem;}
+    header img{max-width:500px;height:auto;}
+    h1,h2{font-family:'Playfair Display',serif;}
+    .section{max-width:900px;margin:2rem auto;padding:2rem;background:var(--panel);border-radius:14px;box-shadow:0 8px 20px rgba(0,0,0,.06);}
+    .cta{text-align:center;margin-top:.5rem}
+    .btn{display:inline-block;padding:.9rem 1.2rem;border-radius:999px;background:var(--brand);color:#fff;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(196,43,108,.25)}
+    .btn:hover{transform:translateY(-1px)}
+    .contact a{color:var(--brand);text-decoration:none}
+    .footer{text-align:center;padding:2rem 1rem;color:#666;background:rgba(255,255,255,.9)}
   </style>
 </head>
 <body>
   <header>
     <img src="logo1.png" alt="Bridge & Bloom Logo">
     <h1>Centering birth equity through compassionate consulting and community-rooted care.</h1>
+    <div class="cta"><a class="btn" href="supporting-her.html">Supporting Her – Virtual Class</a></div>
   </header>
 
   <section class="section about">
@@ -69,11 +45,9 @@
   <section class="section contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:katie@bridgeandbloompgh.com">katie@bridgeandbloompgh.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/katie-masley-715kh/" target="_blank">Katie Masley</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/katie-masley-715kh/" target="_blank" rel="noopener">Katie Masley</a></p>
   </section>
 
-  <div class="footer">
-    &copy; 2025 Bridge & Bloom, LLC. All rights reserved.
-  </div>
+  <div class="footer">&copy; 2025 Bridge & Bloom, LLC.</div>
 </body>
 </html>
